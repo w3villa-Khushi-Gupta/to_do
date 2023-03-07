@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>To-do list</title>
+</head>
+<body>
+<!-- Opening-Win -->
+    <div class="container ">
+        <div class="content_box mt">
+            <h1 class="heading text-center py-4">
+                To-Do List
+            </h1>
+            <div class="task_name d-flex justify-content-center">
+                <label >Task</label>
+                <input id="main_task" type="text" placeholder="Name">
+            </div>
+            <div class=" task_des  justify-content-center mts ">
+                <textarea id="main_task_des" placeholder=" Description" cols="23"></textarea>
+            </div> 
+            <div class="date d-flex justify-content-center mts">
+                <label> Date</label>
+                <input id="main_date" type="date" >
+            </div>
+            <div class="add_task text-center mts">
+                <button  onclick="add_task()">Add Task</button>
+            </div>
+        </div>
+    </div>
+    
+<!-- Opening-Win -->
+
+<!-- Task added-win -->
+    <div class="container ">
+        <div class="table_win mt" id="table_win">
+            <table class="display_table " id="display_table">
+                <thead id="t_head">
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Due date</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="t_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- Task added-win -->
+
+<!-- update-win -->
+    <div class="update_win text-center" id="update_win">
+        <div class="close">&times</div>
+        <h1 class="mts">Updation Window</h1>
+        
+        <input class="mts" id="up_task" type="text" placeholder="Task" ><br>
+        <textarea class="mts" id="up_des" placeholder="Task Description" ></textarea><br>
+        <input  class="mts" id="up_date" type="date"    ><br>
+        <button class="mts" id="update_button" >Save Results</button>
+    </div>
+<!-- update-win -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
